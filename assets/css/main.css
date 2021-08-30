@@ -1,0 +1,19 @@
+:root {
+    --darkGrey: #23272a
+    --lightGrey: #2c2f33
+    --blueGrey: #99aab5
+}
+
+.header{
+    background-color: var(--darkGrey);
+    color: var(--lightGrey);
+}
+
+.left{
+    margin-left: auto;
+}
+
+/* default classes */
+body {
+    background-color: var(--lightGrey);
+}
