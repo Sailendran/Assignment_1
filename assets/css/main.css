@@ -1,19 +1,48 @@
 :root {
-    --darkGrey: #23272a
-    --lightGrey: #2c2f33
-    --blueGrey: #99aab5
+    --darkGrey: #23272a;
+    --lightGrey: #2c2f33;
+    --blueGrey: #99aab5;
+    --titleFS: 40px;
+    --vertMargins: 33.2px;
+    --headerVertPadding: 20px;
 }
 
 .header{
     background-color: var(--darkGrey);
-    color: var(--lightGrey);
+    color: var(--blueGrey);
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    padding: 5px;
+    font-size: var(--titleFS);
+    padding-top: var(--headerVertPadding);
+    padding-bottom: var(--headerVertPadding);
 }
 
+/* alignments */
 .left{
-    margin-left: auto;
+    float: left;
+    color: inherit;
+    font-size: inherit;
 }
+
+.icon{
+    font-family: "Material Icons";
+    font-size: var(--titleFS);
+    margin-top: 13px;
+    margin-bottom:3px;
+}
+
 
 /* default classes */
 body {
     background-color: var(--lightGrey);
+    margin: 0%;
+    color: white;
+}
+
+p {
+    font-family: 'Arima Madurai' !important;
 }
