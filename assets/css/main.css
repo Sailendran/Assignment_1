@@ -5,7 +5,7 @@
     --discPurple: #7289da;
     --titleFS: 40px;
     --vertMargins: 33.2px;
-    --headerVertPadding: 20px;
+    --headerVertPadding: 10px;
     --hztCentrePadding: 175px;
 }
 
@@ -27,11 +27,19 @@ hr.bottomDivider{
     margin-top: 0px;
     padding-top: var(--headerVertPadding);
     padding-bottom: var(--headerVertPadding);
+    padding-right: var(--headerVertPadding);
+    padding-left: var(--headerVertPadding);
 }
 
 /* alignments */
 .left{
     float: left;
+    color: inherit;
+    font-size: inherit;
+}
+
+.right{
+    float: right;
     color: inherit;
     font-size: inherit;
 }
@@ -78,6 +86,14 @@ hr.bottomDivider{
 }
 
 /* default classes */
+a{
+    color:inherit;
+}
+
+a:hover, a:focus{
+    color: var(--discPurple);
+    transition: 0.5s;
+}
 body {
     background-color: var(--lightGrey);
     color: white;
