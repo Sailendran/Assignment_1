@@ -2,11 +2,18 @@
     --darkGrey: #23272a;
     --lightGrey: #2c2f33;
     --blueGrey: #99aab5;
+    --discPurple: #7289da;
     --titleFS: 40px;
     --vertMargins: 33.2px;
     --headerVertPadding: 20px;
+    --hztCentrePadding: 175px;
 }
 
+hr.bottomDivider{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--lightGrey), var(--blueGrey), var(--lightGrey));
+}
 .header{
     background-color: var(--darkGrey);
     color: var(--blueGrey);
@@ -15,8 +22,9 @@
     margin-left: 0%;
     margin-right: 0%;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     font-size: var(--titleFS);
+    margin-top: 0px;
     padding-top: var(--headerVertPadding);
     padding-bottom: var(--headerVertPadding);
 }
@@ -35,14 +43,71 @@
     margin-bottom:3px;
 }
 
+.centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: var(--hztCentrePadding);
+    padding-right: var(--hztCentrePadding);
+}
+
+.padded {
+    margin: 0px;
+    padding: 15px;
+}
+
+.em{
+    border-radius: 4px;
+    border: var(--darkGrey);
+    background-color: var(--darkGrey);
+    color: beige;
+}
+
+.quote{
+    font-family: "Tangerine" !important;
+    color: var(--discPurple);
+    font-size: 30px;
+    text-align: center;
+}
+
+.author{
+    font-family: Garamond;
+    text-align: right;
+    font-size: 14px;
+}
 
 /* default classes */
 body {
     background-color: var(--lightGrey);
-    margin: 0%;
     color: white;
+    margin:0px
 }
 
 p {
-    font-family: 'Arima Madurai' !important;
+    font-family: 'Arima Madurai';
+}
+
+img{
+    width: 304px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--vertMargins)l;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol{
+    list-style-type: Hebrew;
+}
+li{
+    font-family: "Arima Madurai";
+}
+
+h3{
+    font-family: "Open Sans Condensed";
 }
