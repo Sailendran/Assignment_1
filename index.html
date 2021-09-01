@@ -5,11 +5,14 @@
     <title>Home - Assignment 1</title>
     <link rel = "stylesheet" href = "assets/css/main.css">
     <link rel="shortcut icon" href = "/assets/images/icon.ico">
-    <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Tangerine&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,19 +20,62 @@
     <div class = header>
         <span class = left> <h2 class = "icon">house</h2> </span>
         <span class = title>Homepage</span>
-        <span id = "navbtn" class = right><h2 class = icon>dashboard</h2></span>
+        <span class = right><h2 class = "icon" onclick = "openNavbar()">dashboard</h2></span>
     </div>
 
+<!--Navigation elements-->
+    <nav id = "menu">
+        <ul>
+            <li><mark class = pwd>Home</mark><br></li>
+            <li><a href = book-order.html><h4>Book Ordering System</a><br></li>
+            <li><a href = form.html><h4>Student Details Form</a><br></li>
+            </ul>
+
+        <h2 class = "closebtn" onclick = "closeNavbar()">close</h2>
+    </nav>
+
     <div class = padded>
+
     <img src = assets/images/portrait.jpeg>
-    <p class = centre> Own image </p>
+    <p class = centre> (Own image) </p>
     <span class = centre><h1 class = em>Welcome to Sai's website</h1></span>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="height: 6vh;"></div>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis 
-        dolores nisi deleniti aliquid corporis, modi perferendis harum doloribus quasi 
-        exercitationem esse dolorem ducimus fugit, expedita vitae eum iste veritatis.
+        When asked about myself, I usually reply with the Dutch saying - 'Niemand kan regeren 
+        in het rechtszaak van zelf' - which means that nobody can be a judge in their 
+        own trial...
         <br><br>
-        Kankahalla kassva kaunis kukkanen
+        <b>so I made the mistake of asking my comrades to describe me:</b>
+        <br>
+
+        <p class = comradequote>"You're Malaysian so I don't really need to roast you.
+            Upin Ipin looking a**"</p>
+        <p class = author>- HumanSammich from Jakarta, Indonesia</p>
+        <br>
+
+        <p class = comradequote> "Is from ASEAN but swears like an Irishman that's had too
+            much to drink" </p>
+        <p class = author> - Vortex </p>
+        <br>
+            
+        <p class = comradequote> "BoBoiBoy looking ************"</p>
+        <p class = author> - Human Sammich, not letting up the opportiunity to roast me</p>
+        <br>
+        
+        <p class = comradequote>"Tiger hunting b*****d"</p>
+        <p class = author>- Slaanesh, a Kiwi whose father, a veteran of The<br>Malayan Emergency,
+            fought more tigers than communists</p>
+        <br>
+
+        <p class = comradequote>"Uhhh... ummmm... aahhh... hmmm...<br>Your mother?"</p>
+        <p class = author>- Aiden, The Canadian who is too nice to roast me</p>
+        <br>
+
+        <img src = "assets/images/chedet.png" style="width:40vw">
+        <p class = author> - SpeedOfSound1, The Alaba-man</p>
+        
     </p>
     <br><br>
     
@@ -42,7 +88,7 @@
 
     <br>
 
-    <h3>Top subjects</h3>
+    <span><h3>Top subjects</h3></span>
     <ol>
         <li>Mathematics</li>
         <li>History</li>
@@ -56,14 +102,16 @@
     <br>
 
 <div class = padded>
-<p class = quote>
+<p class = footquote>
     "We choose to go to the Moon in this decade and do the other things, 
     not because they are easy, but because they are hard" </p>
 <p class = author>    
     - John F Kennedy, 12/9/1962
 </p>
 
-
 </div>
+
+<script src = "assets/js/navbar.js"></script>
 </body>
+
 </html>
