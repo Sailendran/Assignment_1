@@ -5,6 +5,7 @@
     --discPurple: #7289da;
     --cream: #fffaf2;
     --darkWhite: #b8c1e6;
+    --darkPurple: indigo;
     --titleFS: 4vh;
     --vertMargins: 2vh;
     --headerVertPadding: 1vh;
@@ -31,6 +32,9 @@ hr.bottomDivider{
     padding-bottom: var(--headerVertPadding);
     padding-right: var(--headerVertPadding);
     padding-left: var(--headerVertPadding);
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
 }
 
 /* alignments */
@@ -64,9 +68,10 @@ hr.bottomDivider{
 }
 
 .padded {
-    margin: 0;
-    padding-right: 0.5vw;
+    margin: 1%;
+    padding-right: 2vw;
     padding-left: 2vw;
+    margin-top: 4vh
 }
 
 .em{
@@ -75,6 +80,7 @@ hr.bottomDivider{
     background-color: var(--darkGrey);
     color: beige;
     font-family: "Hina Mincho";
+    margin-top: 3vh;
 }
 
 .comradequote{
@@ -87,6 +93,13 @@ hr.bottomDivider{
     font-family: "Tangerine" !important;
     color: var(--discPurple);
     font-size: 3vw;
+    text-align: center;
+}
+
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     text-align: center;
 }
 
@@ -127,6 +140,95 @@ img{
     padding: var(--vertMargins)l;
 }
 
+table{
+    border-collapse: collapse;
+    width: 90vw;
+}
+
+td, th{
+    border: solid;
+    border-color: var(--blueGrey);
+    font-family: "ZCOOL XiaoWei", serif;
+    width:auto;
+    background-color: var(--lightGrey);
+    align-items: center;
+    padding:0.5rem;
+}
+
+td:hover{
+    background-color: yellow;
+}
+
+.tf:hover{
+    background-color: skyblue;
+}
+
+th{
+    font-family: "Open Sans Condensed";
+    background-color: skyblue;
+    font-weight: bold;
+}
+
+/* form elements*/
+    input {
+        background-color: var(--cream);
+        color: var(--darkGrey);
+    }
+
+    input:disabled{
+        background-color: silver;
+    }
+
+    #grandTotal{
+        font-size: 18pt;
+        width: 93.5%;
+        display: block;
+        margin: 0.5vw;
+        margin-left: auto;
+        text-align: right;
+        background-color: var(--blueGrey);
+    }
+
+    .tf{
+        background-color: skyblue;
+    }
+
+    select{
+        background-color: var(--cream);
+        color: var(--darkGrey);
+    }
+
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance:textfield;
+        text-align: right;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: var(--darkGrey);
+        border: none;
+        color: var(--blueGrey);
+        font-family: "Arima Madurai", bold;
+        font-weight: bolder;
+        width: 25%;
+        height:250%;
+        margin-right: 2vw;
+        cursor: grab;
+      }
+
+      input[type="text"], textarea {
+        background-color : var(--cream); 
+        margin : 1vw;
+        display: block;
+        padding: 1%;
+      }
+
 ul {
     list-style-type: square;
 }
@@ -142,7 +244,7 @@ li{
 
 h3{
     font-family: "Open Sans Condensed";
-    font-size: 2.5vw;
+    font-size: 4vh;
     border-bottom: 1px solid var(--discPurple);
     border-bottom-width: 0.0001vw;
     padding: 0.25vh;
@@ -187,7 +289,8 @@ nav ul li{
 }
 
 nav ul li a:hover{
-    color: red;
+    color:var(--darkGrey);
+    transition: 0.75s;
 }
 
 .pwd{
