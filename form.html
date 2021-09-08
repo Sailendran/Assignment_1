@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home - Assignment 1</title>
+        <title>Form - Assignment 1</title>
     <link rel = "stylesheet" href = "assets/css/main.css">
     <link rel="shortcut icon" href = "/assets/images/icon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
@@ -18,7 +18,7 @@
 <body>
     <div class = header>
         <span class = left><a href = index.html><h2 class = "icon">house</h2></a></span>
-        <span class = title>Book Ordering System</span>
+        <span class = title>Student Detail Form</span>
         <span class = right><h2 class = "icon" onclick = "openNavbar()">dashboard</h2></span>
     </div>
 
@@ -34,41 +34,58 @@
     </nav>
 
 <!-- Content -->
-<form>
-    <table>
+    <div class = padded>
+        <form>
+            <table>
 
-        <tr>
-            <th>Student ID</th>
-            <td><input type = text></td>
-        </tr>
+                <tr>
+                    <th>Student ID</th>
+                    <td><input type = text></td>
+                </tr>
 
-        <tr>
-            <th>Name</th>
-            <td><input type = text></td>
-        </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><input type = text></td>
+                </tr>
 
-        <tr>
-            <th></th>
-            <td></td>
-        </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type = radio name = gender> Male
+                        <input type = radio name = gender> Female
+                        <input type = radio name = gender checked> Rather not say
+                    </td>
+                </tr>
 
-        <tr>
-            <th></th>
-            <td></td>
-        </tr>
+                <tr>
+                    <th>Favourite Module</th>
+                    <td>
+                        <select>
+                            <option selected = selected disabled>Please choose a module...</option>
+                            <option> Introduction to Computing</option>
+                            <option>Web Programming</option>
+                            <option> Introduction to Algorithm</option>
+                        </select>
+                    </td>
+                </tr>
 
-        <tr>
-            <th></th>
-            <td></td>
-        </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td><input type = "textarea"></td>
+                </tr>
 
-        <tr>
-            <th></th>
-            <td></td>
-        </tr>
+                <tr>
+                    <td colspan = 2>
+                        <span class = centre style = "padding-left:12.5%; padding-right:12.5%">
+                            <input type = submit style = "display:inline-block">
+                            <input type = reset style = "display:inline-block">
+                    </span>
+                    </td>
+                </tr>
 
-    </table>
-</form>
+            </table>
+        </form>
+    </div>
 
 <script src = assets/js/navbar.js></script>
 </body>

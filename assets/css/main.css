@@ -214,7 +214,7 @@ th{
         margin-right: auto;
     }
 
-    input[type=button], input[type=submit], input[type=reset] {
+    #calcGT {
         background-color: var(--darkGrey);
         border: none;
         color: var(--blueGrey);
@@ -224,6 +224,22 @@ th{
         height:250%;
         margin-right: 2vw;
         cursor: grab;
+      }
+
+      #detailForm th{
+          width:50%
+      }
+
+      input[type="submit"], input[type="reset"]{
+        background-color: var(--darkGrey);
+        border: yellow 3rem;
+        color: var(--blueGrey);
+        font-family: "Arima Madurai", bold;
+        font-weight: bolder;
+        width: 25%;
+        height:250%;
+        margin: 5%;
+        cursor: pointer;
       }
 
       input[type="text"], textarea {
