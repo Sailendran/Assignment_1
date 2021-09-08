@@ -131,6 +131,10 @@ p {
     font-size: 1vw
 }
 
+#para:first-letter{
+    font-size: 250%;
+}
+
 img{
     width: 304px;
     height: auto;
@@ -155,11 +159,11 @@ td, th{
     padding:0.5rem;
 }
 
-td:hover{
+#bookTable td:hover{
     background-color: yellow;
 }
 
-.tf:hover{
+#bookTable .tf:hover{
     background-color: skyblue;
 }
 
