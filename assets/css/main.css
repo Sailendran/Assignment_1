@@ -6,7 +6,7 @@
     --cream: #fffaf2;
     --darkWhite: #b8c1e6;
     --darkPurple: indigo;
-    --titleFS: 4vh;
+    --titleFS: 2.25rem;
     --vertMargins: 2vh;
     --headerVertPadding: 1vh;
     --hztCentrePadding: 35vw;
@@ -17,6 +17,7 @@ hr.bottomDivider{
     height: 1px;
     background-image: linear-gradient(to right, var(--lightGrey), var(--blueGrey), var(--lightGrey));
 }
+
 .header{
     background-color: var(--darkGrey);
     color: var(--blueGrey);
@@ -35,6 +36,12 @@ hr.bottomDivider{
     position: -webkit-sticky;
     position: sticky;
     top:0;
+    animation: hPulse 5s infinite;
+}
+
+/* Header pulse */
+@keyframes hPulse{
+    50%{background-color: var(--lightGrey);}
 }
 
 /* alignments */
@@ -85,14 +92,14 @@ hr.bottomDivider{
 
 .comradequote{
     font-family: "ZCOOL XiaoWei", serif;
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center;
 }
 
 .footquote{
     font-family: "Tangerine" !important;
     color: var(--discPurple);
-    font-size: 3vw;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -106,7 +113,7 @@ hr.bottomDivider{
 .author{
     font-family: Garamond;
     text-align: right;
-    font-size: 1.5vw;
+    font-size: 1.25rem;
 }
 
 /* default classes */
@@ -122,13 +129,22 @@ a{
 
 body {
     background-color: var(--lightGrey);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     color: white;
     margin:0;
+    animation: bgPulse 5s infinite;
+}
+
+/* Background pulse */
+@keyframes bgPulse {
+    50%{background-color: var(--darkGrey);}
 }
 
 p {
     font-family: 'Arima Madurai';
-    font-size: 1vw
+    font-size: 1rem
 }
 
 #para:first-letter{
@@ -209,6 +225,18 @@ th{
         text-align: right;
     }
 
+    #studentID {
+        -webkit-appearance: none;
+        -moz-appearance:textfield;
+        text-align: right;
+        background-color: var(--cream);
+        color: var(--darkGrey);
+        background-color : var(--cream); 
+        margin : 0;
+        display: block;
+        padding: 1%;
+    }
+
     table {
         margin-left: auto;
         margin-right: auto;
@@ -226,28 +254,35 @@ th{
         cursor: grab;
       }
 
-      #detailForm th{
-          width:50%
-      }
-
-      input[type="submit"], input[type="reset"]{
+    #detailForm th{
+        width:50%;
         background-color: var(--darkGrey);
-        border: yellow 3rem;
-        color: var(--blueGrey);
-        font-family: "Arima Madurai", bold;
-        font-weight: bolder;
-        width: 25%;
-        height:250%;
-        margin: 5%;
-        cursor: pointer;
-      }
+    }
 
-      input[type="text"], textarea {
-        background-color : var(--cream); 
-        margin : 1vw;
-        display: block;
-        padding: 1%;
-      }
+    input[type="submit"], input[type="reset"]{
+    background-color: var(--darkGrey);
+    border: yellow 3rem;
+    color: var(--blueGrey);
+    font-family: "Arima Madurai", bold;
+    font-weight: bolder;
+    width: 25%;
+    height:250%;
+    margin: 5%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    }
+
+    input[type="text"], input[type=textarea] {
+    background-color : var(--cream); 
+    margin : 1vw;
+    display: block;
+    padding: 1%;
+    }
+
+    #name{
+        margin: 0;
+    }
 
 ul {
     list-style-type: square;
@@ -257,14 +292,15 @@ ol{
     list-style-type: Hebrew;
     margin: 0.1vh
 }
+
 li{
     font-family: "Arima Madurai";
-    font-size: 1.25vw;
+    font-size: 1rem;
 }
 
 h3{
     font-family: "Open Sans Condensed";
-    font-size: 4vh;
+    font-size: 2.25rem;
     border-bottom: 1px solid var(--discPurple);
     border-bottom-width: 0.0001vw;
     padding: 0.25vh;
@@ -272,14 +308,7 @@ h3{
     width: 15vw;
 }
 
-/*h4{
-    font-family: 'Avro', serif;
-    color:var(--blueGrey);
-    text-align: center;
-}*/
-
 /* NAVIGATION BAR */
-
 nav{
     position: absolute;
     width:100%;
@@ -297,8 +326,8 @@ nav{
     color: var(--cream);
     text-shadow: -0.35vw -0.3vh 0 var(--darkWhite);
 
-    /*Hides navbar until summoned*/
-    transition: 1s;
+    /*slides navbar down*/
+    transition: 0.2s;
 }
 
 nav ul li{

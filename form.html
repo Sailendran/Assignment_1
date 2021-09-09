@@ -35,17 +35,17 @@
 
 <!-- Content -->
     <div class = padded>
-        <form>
-            <table>
+        <form action = "form-submitted.html">
+            <table id = "detailForm">
 
                 <tr>
                     <th>Student ID</th>
-                    <td><input type = text></td>
+                    <td><input type = number max = 9999999 min = 0 id = "studentID"></td>
                 </tr>
 
                 <tr>
                     <th>Name</th>
-                    <td><input type = text></td>
+                    <td><input type = text id = name></td>
                 </tr>
 
                 <tr>
@@ -71,7 +71,7 @@
 
                 <tr>
                     <th>Notes</th>
-                    <td><input type = "textarea"></td>
+                    <td><textarea rows = 4></textarea></td>
                 </tr>
 
                 <tr>
@@ -87,5 +87,7 @@
         </form>
     </div>
 
-<script src = assets/js/navbar.js></script>
+    <script src = assets/js/navbar.js></script>
+
 </body>
+</html>
