@@ -84,8 +84,8 @@ hr.bottomDivider{
 .em{
     border-radius: 2vh;
     border: var(--darkGrey);
-    background-color: var(--darkGrey);
-    color: beige;
+    background-color: bisque;
+    color: black;
     font-family: "Hina Mincho";
     margin-top: 3vh;
 }
@@ -100,13 +100,6 @@ hr.bottomDivider{
     font-family: "Tangerine" !important;
     color: var(--discPurple);
     font-size: 2.5rem;
-    text-align: center;
-}
-
-.footer{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     text-align: center;
 }
 
@@ -187,6 +180,13 @@ th{
     font-family: "Open Sans Condensed";
     background-color: skyblue;
     font-weight: bold;
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
 /* form elements*/
