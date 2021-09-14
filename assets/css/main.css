@@ -115,6 +115,11 @@ a{
     text-decoration: none;
 }
 
+footer > p > a{
+    color:var(--discPurple);
+    
+}
+
 .header.a:hover, a:focus{
     color: var(--discPurple);
     transition: 0.5s;
@@ -160,26 +165,26 @@ table{
 
 td, th{
     border: solid;
-    border-color: var(--blueGrey);
+    border-color: var(--cream);
     font-family: "ZCOOL XiaoWei", serif;
     width:auto;
     background-color: var(--lightGrey);
-    align-items: center;
     padding:0.5rem;
 }
 
-#bookTable td:hover{
-    background-color: yellow;
+tr{
+    background-color: inherit;
 }
 
-#bookTable .tf:hover{
-    background-color: skyblue;
+#bookTable tbody tr:hover td{
+    background-color: yellow;
 }
 
 th{
     font-family: "Open Sans Condensed";
     background-color: skyblue;
     font-weight: bold;
+    font-size: 1.5rem
 }
 
 footer{
@@ -216,6 +221,9 @@ footer{
     select{
         background-color: var(--cream);
         color: var(--darkGrey);
+        font-family: "Open Sans Condensed";
+        font-weight: bold;
+        font-size: 1.25rem;
     }
 
     input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] {
@@ -223,6 +231,9 @@ footer{
         margin: 0;
         -moz-appearance:textfield;
         text-align: right;
+        font-family: "Open Sans Condensed";
+        font-weight: bold;
+        font-size: 1.25rem;
     }
 
     #studentID {
@@ -245,7 +256,7 @@ footer{
     #calcGT {
         background-color: var(--darkGrey);
         border: none;
-        color: var(--blueGrey);
+        color: var(--discPurple);
         font-family: "Arima Madurai", bold;
         font-weight: bolder;
         width: 25%;
@@ -256,28 +267,35 @@ footer{
 
     #detailForm th{
         width:50%;
-        background-color: var(--darkGrey);
+        background-color: skyblue;
     }
 
     input[type="submit"], input[type="reset"]{
-    background-color: var(--darkGrey);
-    border: yellow 3rem;
-    color: var(--blueGrey);
-    font-family: "Arima Madurai", bold;
-    font-weight: bolder;
-    width: 25%;
-    height:250%;
-    margin: 5%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    cursor: pointer;
+        background-color: var(--discPurple);
+        border: yellow 3rem;
+        color: var(--darkGrey);
+        font-family: "Arima Madurai", bold;
+        font-weight: bolder;
+        font-size: 1.25rem;
+        width: 25%;
+        height:250%;
+        margin: 5%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        cursor: pointer;
     }
 
     input[type="text"], input[type=textarea] {
-    background-color : var(--cream); 
-    margin : 1vw;
-    display: block;
-    padding: 1%;
+        background-color : var(--cream); 
+        margin : 1vw;
+        padding: 1%;
+        font-family: "Open Sans Condensed";
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    #bookTable td{
+        text-align: center;
     }
 
     #name{
