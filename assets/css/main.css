@@ -98,7 +98,7 @@ hr.bottomDivider{
 
 .footquote{
     font-family: "Tangerine" !important;
-    color: var(--discPurple);
+    color: var(--cream);
     font-size: 2.5rem;
     text-align: center;
 }
@@ -115,7 +115,7 @@ a{
     text-decoration: none;
 }
 
-footer > p > a{
+footer p, footer h2{
     color:var(--discPurple);
     
 }
@@ -195,9 +195,13 @@ footer{
 }
 
 /* form elements*/
-    input {
+    input, button{
         background-color: var(--cream);
         color: var(--darkGrey);
+    }
+
+    button{
+        padding:0.75em
     }
 
     input:disabled{
@@ -270,6 +274,14 @@ footer{
         background-color: skyblue;
     }
 
+    #detailForm input[type = text], #detailForm input[type=textarea], #detailForm input[type=number] {
+        width : 97.25%;
+    }
+
+    #detailForm select {
+        width: 100%;
+    }
+
     input[type="submit"], input[type="reset"]{
         background-color: var(--discPurple);
         border: yellow 3rem;
@@ -319,11 +331,8 @@ li{
 h3{
     font-family: "Open Sans Condensed";
     font-size: 2.25rem;
-    border-bottom: 1px solid var(--discPurple);
-    border-bottom-width: 0.0001vw;
-    padding: 0.25vh;
-    margin-bottom: 0.01vh;
-    width: 15vw;
+    text-decoration: underline lightblue 0.01em;
+    text-underline-offset: 0.75rem;
 }
 
 /* NAVIGATION BAR */
