@@ -167,9 +167,10 @@ td, th{
     border: solid;
     border-color: var(--cream);
     font-family: "ZCOOL XiaoWei", serif;
-    width:auto;
+    width :auto;
     background-color: var(--lightGrey);
     padding:0.5rem;
+    font-size: 1.5rem;
 }
 
 tr{
@@ -183,6 +184,7 @@ tr{
 th{
     font-family: "Open Sans Condensed";
     background-color: skyblue;
+    color: var(--darkGrey);
     font-weight: bold;
     font-size: 1.5rem
 }
@@ -263,7 +265,7 @@ footer{
         color: var(--discPurple);
         font-family: "Arima Madurai", bold;
         font-weight: bolder;
-        width: 25%;
+        width: 40%;
         height:250%;
         margin-right: 2vw;
         cursor: grab;

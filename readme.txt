@@ -8,3 +8,5 @@ Images, CSS, JS, icon stored in: /assets
 It's supposed to be me with a songkok covering my face when I fell asleep 
 in between sessions.
 - Google fonts used for fonts and icons
+
+Source code and versions can also be found here: https://github.com/Sailendran/Assignment_1
