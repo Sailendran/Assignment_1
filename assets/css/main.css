@@ -338,49 +338,49 @@ h3{
 }
 
 /* NAVIGATION BAR */
-nav{
-    position: absolute;
-    width:100%;
-    height: 100vh;
-    background-color: var(--darkGrey);
-    top: -300vh;
-    left: 0;
-    display: flex;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    font-size: 10vh;
-    color: var(--cream);
-    text-shadow: -0.35vw -0.3vh 0 var(--darkWhite);
+    nav{
+        position: absolute;
+        width:100%;
+        height: 100vh;
+        background-color: var(--darkGrey);
+        top: -300vh;
+        left: 0;
+        display: flex;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-style: italic;
+        font-size: 10vh;
+        color: var(--cream);
+        text-shadow: -0.35vw -0.3vh 0 var(--darkWhite);
 
-    /*slides navbar down*/
-    transition: 0.2s;
-}
+        /*slides navbar down*/
+        transition: 0.2s;
+    }
 
-nav ul li{
-    list-style: none;
-    margin: 20vh 0;
-    font-size: 5vw;
-    font-family: "Avro";
-}
+    nav ul li{
+        list-style: none;
+        margin: 20vh 0;
+        font-size: 5vw;
+        font-family: "Avro";
+    }
 
-nav ul li a:hover{
-    color:var(--darkGrey);
-    transition: 0.75s;
-}
+    nav ul li a:hover{
+        color:var(--darkGrey);
+        transition: 0.75s;
+    }
 
-.pwd{
-    color: var(--discPurple);
-    background-color: inherit;
-}
+    .pwd{
+        color: var(--discPurple);
+        background-color: inherit;
+    }
 
-.closebtn{
-    position:absolute;
-    right: 1vw;
-    top: -1vh;
-    cursor: pointer;
-    font-family: "Material Icons";
-    font-size: 3.25vw;
-}
+    .closebtn{
+        position:absolute;
+        right: 1vw;
+        top: -1vh;
+        cursor: pointer;
+        font-family: "Material Icons";
+        font-size: 3.25vw;
+    }
