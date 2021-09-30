@@ -39,6 +39,15 @@ hr.bottomDivider{
     animation: hPulse 5s infinite;
 }
 
+.header img {
+    width: calc(1.25 * var(--titleFS));
+    margin-top: 0vw;
+    padding-top: calc(1.25 *var(--headerVertPadding));
+    padding-bottom: calc(1.25 *var(--headerVertPadding));
+    padding-right: calc(1.25 *var(--headerVertPadding));
+    padding-left: calc(1.25 *var(--headerVertPadding));
+}
+
 /* Header pulse */
 @keyframes hPulse{
     50%{background-color: var(--lightGrey);}
